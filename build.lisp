@@ -95,7 +95,7 @@
                   (t (write-no-comments str inc comments)))))
               (t nil)))))
     ;;           
-  (with-open-file (str (capi:prompt-for-file "Output File" :operation :save :pathname "/Users/david/Desktop/") :direction :output)
+  (with-open-file (str "ulisp.ino" :direction :output)
     ;; Write preamble
     ; (include :header str)
     (write-no-comments str (eval (intern (format nil "*~a-~a*" :header platform) :cl-user)) t)

@@ -25,6 +25,19 @@
 (push :code *features*)
 
 
-(load "/Users/david/Projects/Builder/builder defsys.lisp")
+;(load "./builder defsys.lisp")
 
-(compile-system "builder" :load t) 
+;(compile-system "builder" :load t) 
+(load "extras")
+(load "functions")
+(load "preface")
+(load "utilities")
+(load "saveload")
+(load "prettyprint")
+(load "assembler")
+(load "postscript")
+(load "avr")
+(load "arm")
+(load "esp")
+(load "riscv")
+(load "build")
